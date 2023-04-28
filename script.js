@@ -58,6 +58,7 @@ window.addEventListener('keypress', event => {
         display.textContent = ''
         lineup.style.opacity = 1
         color.style.background = 'white'
+        showColor()
     }
 })
 
