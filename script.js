@@ -3,6 +3,7 @@ var count = 60 * 10
 var display = document.querySelector('#timer');
 var color = document.getElementById('color')
 var lineup = document.getElementById('lineup')
+var timer
 
 var intervalId = null
 
@@ -17,8 +18,9 @@ function startTimer(duration, display) {
     display.style.opacity = 1
     color.style.opacity = 0
     color.style.background = 'rgb(245, 8, 107)'
-
-    var timer = duration, minutes, seconds;
+    timer = duration
+    window.timer = duration
+  //  var timer = duration, minutes, seconds;
     if(intervalId !== null) clearInterval(intervalId)
     display.textContent = "10:00";
     timer--
